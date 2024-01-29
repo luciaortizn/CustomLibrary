@@ -17,7 +17,7 @@
                     <Image Margin="20" Source="logo.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"  WidthRequest="40" HeightRequest="40"></Image>
 
                     <Label WidthRequest="200" TextColor="White"  Padding="50,0,0,0"  Text="Librería" VerticalOptions="Center" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"></Label>
-                    <Label WidthRequest="200" TextColor="White"  Padding="100,0,0,0"  Text="{x:Static local:App.Username}" VerticalOptions="Center" HorizontalOptions="End" ></Label>
+                    <Label WidthRequest="200" TextColor="White"  Padding="60,0,20,0"  Text="{x:Static local:App.Username}" VerticalOptions="Center" HorizontalOptions="End" ></Label>
                     <Image Source="user_icon_default.png" WidthRequest="60" VerticalOptions="Center" HorizontalOptions="End"></Image>
 
                     <ContentPresenter Grid.Row="1" BackgroundColor="White">

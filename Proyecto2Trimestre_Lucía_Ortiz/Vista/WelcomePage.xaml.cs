@@ -100,7 +100,7 @@ public partial class WelcomePage : Plantillas.Plantilla1
         {
             string selectedOption = (string)picker.SelectedItem;
             OpcionPicker_app = selectedOption;
-            System.Diagnostics.Debug.WriteLine("Opcion picker nueva: " + OpcionPicker_app);
+           
         }
     }
 
@@ -117,7 +117,7 @@ public partial class WelcomePage : Plantillas.Plantilla1
             else
             {
                 TxtBuscador_app = searchBar.Text;
-                System.Diagnostics.Debug.WriteLine("Texto buscador" + TxtBuscador_app);
+              
 
                 String peticionNueva = "";
                 //poner si texto buscador es vacío

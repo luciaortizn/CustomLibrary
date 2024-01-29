@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Usuario\source\repos\Proyecto2Trimestre_Lucía_Ortiz\Proyecto2Trimestre_Lucía_Ortiz\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-29T11:26:42.268</Modified>
+      <Modified>2024-01-29T19:27:26.467</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\source\repos\Proyecto2Trimestre_Lucía_Ortiz\Proyecto2Trimestre_Lucía_Ortiz\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Proyecto2Trimestre_Lucía_Ortiz.dll">
       <PackagePath>Proyecto2Trimestre_Lucía_Ortiz.dll</PackagePath>
-      <Modified>2024-01-29T11:26:38.540</Modified>
+      <Modified>2024-01-29T19:27:24.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\source\repos\Proyecto2Trimestre_Lucía_Ortiz\Proyecto2Trimestre_Lucía_Ortiz\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Proyecto2Trimestre_Lucía_Ortiz.exe</PackagePath>
-      <Modified>2024-01-29T11:26:38.664</Modified>
+      <Modified>2024-01-29T19:27:24.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\source\repos\Proyecto2Trimestre_Lucía_Ortiz\Proyecto2Trimestre_Lucía_Ortiz\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Proyecto2Trimestre_Lucía_Ortiz.deps.json">
       <PackagePath>Proyecto2Trimestre_Lucía_Ortiz.deps.json</PackagePath>

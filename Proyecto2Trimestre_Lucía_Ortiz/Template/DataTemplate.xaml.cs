@@ -25,13 +25,13 @@ public partial class DataTemplate : ContentView
         if (!App.userRepositorio.VerificarSiExisteEnFavoritos(id_User, stringISBN))
         {
             likeImage.Source = "like_icon.png";
-            System.Diagnostics.Debug.WriteLine("imagen quitada pero bien");
+           
 
         }
         else
         {
             likeImage.Source = "like_icon_filled.png";
-            System.Diagnostics.Debug.WriteLine("imagen no quitada pero bien");
+            
         }
     }
 
