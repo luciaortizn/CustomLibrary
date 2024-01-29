@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pl:Plantilla1 xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.Vista.Favoritos"
+             xmlns:pl="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Plantillas"
+             xmlns:tm="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Template">
+
+    <ContentPage.MenuBarItems >
+        <MenuBarItem Text="Opciones">
+            <MenuFlyoutItem Text="Página principal" Clicked="MenuFlyoutItem_Clicked"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Cerrar sesión" Clicked="MenuFlyoutItem_Clicked"></MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <CollectionView Grid.Row="0"  x:Name="listaFavoritos">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3" />
+
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <tm:FavsTemplate/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</pl:Plantilla1>

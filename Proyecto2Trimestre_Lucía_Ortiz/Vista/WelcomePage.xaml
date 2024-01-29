@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pl:Plantilla1 xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.VistaModelo"
+             xmlns:pl="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Plantillas"
+             xmlns:tm="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Template"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.Vista.WelcomePage"
+             NavigationPage.HasNavigationBar="True"
+               NavigationPage.HasBackButton="False" >
+    
+    <ContentPage.BindingContext>
+        <tm:DataTemplate></tm:DataTemplate>
+    </ContentPage.BindingContext>
+    <ContentPage.MenuBarItems >
+        <MenuBarItem Text="Opciones">
+            <MenuFlyoutItem Text="Favoritos" Clicked="MenuFlyoutItem_Clicked"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Cerrar sesión" Clicked="MenuFlyoutItem_Clicked"></MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <ScrollView>
+       
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0">
+
+            <Grid FlowDirection="MatchParent" Padding="20" ColumnDefinitions="*,*,*" RowDefinitions="auto,auto,auto"  HorizontalOptions="CenterAndExpand" ColumnSpacing="20" VerticalOptions="Center">
+                <SearchBar Placeholder="Busca Reseñas" Grid.Row="0" Grid.Column="0" BackgroundColor="White" TextColor="DarkBlue" WidthRequest="300" x:Name="Buscador" SearchButtonPressed="Buscador_SearchButtonPressed" ></SearchBar>
+                <Picker SelectedIndexChanged="Picker_SelectedIndexChanged" BackgroundColor="White" Grid.Column="1"  Grid.Row="0" WidthRequest="100" Margin="12,0,0,0" >
+                    <Picker.Items >
+                        <!--recoger string-->
+                        <x:String >Título</x:String>
+                        <x:String>Autor</x:String>
+                        <x:String>ISBN</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+            </Grid>
+            <BoxView BackgroundColor="RosyBrown" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+            <Label Text="BestSellers" FontAttributes="Bold" FontSize="23"  HorizontalOptions="Center" VerticalOptions="End" ></Label>
+            <CarouselView x:Name="listaVista1" HeightRequest="490" Margin="10" >
+                <CarouselView.ItemsLayout >
+                    <LinearItemsLayout Orientation="Horizontal" SnapPointsType="Mandatory" SnapPointsAlignment="Start"></LinearItemsLayout>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate >
+                    <DataTemplate>
+                        <tm:BestsellerTemplate>
+                        </tm:BestsellerTemplate>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            
+            <BoxView BackgroundColor="RosyBrown" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+            <Label Text="Reseñas" FontAttributes="Bold" FontSize="23"  HorizontalOptions="Center"></Label>
+            <CarouselView x:Name="listaVista"  Margin="10" BackgroundColor="White" HeightRequest="400">
+                <CarouselView.ItemsLayout >
+                    <LinearItemsLayout Orientation="Horizontal" SnapPointsType="Mandatory" SnapPointsAlignment="Start"></LinearItemsLayout>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate >
+                    <DataTemplate>
+                        <tm:DataTemplate>
+                        </tm:DataTemplate>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+        </StackLayout>
+    </ScrollView>
+</pl:Plantilla1>

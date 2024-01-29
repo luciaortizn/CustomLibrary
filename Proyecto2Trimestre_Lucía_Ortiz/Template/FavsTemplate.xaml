@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.Template.FavsTemplate"
+             xmlns:mo="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Modelo"
+             x:DataType="mo:ResultadoLibros" >
+    <FlexLayout BackgroundColor="Transparent" Direction="Row" Wrap="Wrap">
+        <Frame HasShadow="True" BorderColor="AliceBlue" WidthRequest="370" HeightRequest="300" Padding="0" Margin="10">
+            <Grid RowSpacing="20" BackgroundColor="White"  VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" Padding="13">
+                    <StackLayout VerticalOptions="Start" Padding="20" Spacing="3" >
+                        <Label HorizontalOptions="Center" Text="{Binding Book_Title}" TextColor="Black" FontAttributes="Bold" FontSize="18" />
+
+                        <Label TextColor="RosyBrown" FontSize="16" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Autor del libro: "  FontAttributes="Bold"  />
+                                    <Span Text="{Binding Book_Author}"  TextColor="RosyBrown" FontSize="16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label  FontSize="16">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Hecha por: "  FontAttributes="Bold" TextColor="RosyBrown" />
+                                    <Span Text="{Binding Byline}" TextColor="Black" FontSize="13" />
+                                </FormattedString>
+                            </Label.FormattedText>
+
+                        </Label>
+
+                        <Label  FontSize="16">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Fecha de publicación: " FontAttributes="Bold" TextColor="RosyBrown" />
+                                    <Span Text="{Binding Publication_dt}" TextColor="Black" FontAttributes="Italic" FontSize="13" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Text="{Binding Summary}" TextColor="Black"  FontSize="14" >
+                        </Label>
+                    </StackLayout>
+
+                </StackLayout>
+                <HorizontalStackLayout Grid.Column="0" Grid.Row="1" Spacing="160" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                    <Frame HorizontalOptions="Start" Grid.Row="1" BackgroundColor="Black" CornerRadius="10" Padding="10" HeightRequest="45"  WidthRequest="60">
+                        <Label TextColor="White" FontSize="16" Text="URL" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Frame>
+                    <Image x:Name="likeImage" Source="like_icon_filled.png" WidthRequest="34" Margin="0,0,20,10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Like"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </HorizontalStackLayout>
+            </Grid>
+        </Frame>
+    </FlexLayout>
+</ContentView>

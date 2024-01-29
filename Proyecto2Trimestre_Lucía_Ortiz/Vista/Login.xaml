@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.VistaModelo"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.Vista.Login"
+             xmlns:pl="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Plantillas"
+             Title="Login">
+    <ContentPage.BindingContext>
+        <vm:ValidadorLogin></vm:ValidadorLogin>
+    </ContentPage.BindingContext>
+    
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <Grid>
+            <Image Source="bg_wp.jpg" Aspect="Fill" />
+            <Grid Margin="100" HorizontalOptions="Center" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame CornerRadius="20" HasShadow="True" Margin="0" Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                     <Image Source="bg_wp_blur.jpg" Aspect="AspectFit" WidthRequest="430" HeightRequest="290"></Image>
+                </Frame> 
+               
+                <StackLayout Spacing="20" Grid.Column="0" Margin="30, 30, 30, 30" WidthRequest="300" Padding="15" HeightRequest="250">
+                    <Frame x:Name="userFrame" BorderColor="DarkSlateBlue" Padding="5" Margin="10">
+                        <Entry x:Name="Username" Placeholder="Nombre de usuario" Text="{Binding Username}" Margin="0, 0, 0, 0">
+                        </Entry>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+                    <Frame x:Name="passwFrame" BorderColor="DarkSlateBlue" Padding="5" Margin="10">
+                        <Entry x:Name="Password" Placeholder="Contraseña" Text="{Binding Contrasena}" IsPassword="True" Margin="0,0,0,0">
+                        </Entry>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+                    <Button Text="Iniciar Sesión" Command="{Binding validarCommand}" WidthRequest="120" BackgroundColor="#DAA03D" Margin="0,0,0,350"></Button>
+                    <Label Text="¿No tienes cuenta? Registrarse">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding IrARegistroCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

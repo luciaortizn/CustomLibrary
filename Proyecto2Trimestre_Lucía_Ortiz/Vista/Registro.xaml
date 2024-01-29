@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.VistaModelo"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.Vista.Registro"
+             xmlns:pl="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Plantillas"
+             Title="Registro">
+    <ContentPage.BindingContext>
+        <vm:ValidadorRegistro></vm:ValidadorRegistro>
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                <Image Source="bg_wp.jpg" Aspect="AspectFill" />
+                <Grid Margin="30" HorizontalOptions="Center" VerticalOptions="Start" Padding="30" WidthRequest="500">
+                  
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    <Frame CornerRadius="20" HasShadow="True" Margin="0" Padding="0">
+                        <Image Source="bg_wp_blur.jpg" Aspect="AspectFill" WidthRequest="399"></Image>
+                    </Frame>
+
+                    <StackLayout Spacing="2" Grid.Column="0" Margin="30, 30, 30, 0">
+                        <Frame x:Name="nombreFrame" BorderColor="{Binding NombreErrorColor}" Padding="5">
+                                <Entry x:Name="Nombre" Placeholder="Nombre" Text="{Binding Nombre}" Margin="0,0,0,0"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                            <Label Text="{Binding NombreError}" TextColor="White" />
+
+                            <Frame x:Name="edadFrame" BorderColor="{Binding EdadErrorColor}" Padding="5">
+                                <Entry x:Name="Edad"  Placeholder="Edad"  Text="{Binding Edad}" Margin="0,0,0,0"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                            <Label Text="{Binding EdadError}" TextColor="White" />
+
+                            <Frame x:Name="userFrame" BorderColor="{Binding UsernameErrorColor}" Padding="5">
+                                <Entry x:Name="Username" Placeholder="Nombre de Usuario"  Text="{Binding Username}" Margin="0,0,0,0"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Label Text="{Binding UsernameError}" TextColor="White" />
+                        <Frame x:Name="passwFrame" BorderColor="{Binding ContrasenaErrorColor}" Padding="5">
+                                <Entry x:Name="Password" Placeholder="Contraseña"  Text="{Binding Contrasena}" IsPassword="True" Margin="0,0,0,0"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                            <Label Text="{Binding ContrasenaError}" TextColor="White" />
+
+                            <Frame BorderColor="{Binding RepetirContrasenaErrorColor}" Padding="5">
+                                <Entry  Placeholder="Repetir contraseña"  Text="{Binding RepetirContrasena}" IsPassword="True" Margin="0,0,0,0"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnDoubleTap" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                            <Label Text="{Binding RepetirContrasenaError}" TextColor="White" />
+
+                            <Button TextColor="White" Text="Registrar" Command="{Binding validarCommand}" WidthRequest="100" BackgroundColor="#DAA03D" Margin="0,0,0,0"/>
+                            <Label HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" Text="¿Ya se encuentra registrado? Iniciar Sesión" Padding="5" Margin="20">
+                                
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding IrAInicioSesionCommand}" />
+
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                    </Grid>
+               
+            </Grid>
+            <!-- metodo en el .cs. Aqui se pondría atributo Button Clicked Command="{Binding: }"-->
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

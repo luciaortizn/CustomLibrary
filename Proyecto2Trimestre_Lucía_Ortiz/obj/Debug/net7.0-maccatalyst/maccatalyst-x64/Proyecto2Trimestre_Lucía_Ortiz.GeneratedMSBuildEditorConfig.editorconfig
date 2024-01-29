@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Proyecto2Trimestre_Lucía_Ortiz
+build_property.ProjectDir = C:\Users\Usuario\source\repos\Proyecto2Trimestre_Lucía_Ortiz\Proyecto2Trimestre_Lucía_Ortiz\
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Template/BestsellerTemplate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Template.BestsellerTemplate.xaml
+build_metadata.AdditionalFiles.TargetPath = Template\BestsellerTemplate.xaml
+build_metadata.AdditionalFiles.RelativePath = Template\BestsellerTemplate.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Template/DataTemplate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Template.DataTemplate.xaml
+build_metadata.AdditionalFiles.TargetPath = Template\DataTemplate.xaml
+build_metadata.AdditionalFiles.RelativePath = Template\DataTemplate.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Template/FavsTemplate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Template.FavsTemplate.xaml
+build_metadata.AdditionalFiles.TargetPath = Template\FavsTemplate.xaml
+build_metadata.AdditionalFiles.RelativePath = Template\FavsTemplate.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Vista/Favoritos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Vista.Favoritos.xaml
+build_metadata.AdditionalFiles.TargetPath = Vista\Favoritos.xaml
+build_metadata.AdditionalFiles.RelativePath = Vista\Favoritos.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Vista/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Vista.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Vista\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Vista\Login.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Vista/Registro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Vista.Registro.xaml
+build_metadata.AdditionalFiles.TargetPath = Vista\Registro.xaml
+build_metadata.AdditionalFiles.RelativePath = Vista\Registro.xaml
+
+[C:/Users/Usuario/source/repos/Proyecto2Trimestre_Lucía_Ortiz/Proyecto2Trimestre_Lucía_Ortiz/Vista/WelcomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Proyecto2Trimestre_Lucía_Ortiz.Vista.WelcomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Vista\WelcomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Vista\WelcomePage.xaml

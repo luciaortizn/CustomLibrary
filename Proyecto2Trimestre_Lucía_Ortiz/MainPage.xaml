@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pl:Plantilla1 xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pl="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Plantillas"
+             xmlns:mo="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz.Modelo"
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Archivo">
+            <!--item no tiene hijos, subitem si-->
+            <!--Menu desplegable-->
+            <!--imagen en el shell, no se donde poner menu usuario-->
+            <MenuFlyoutItem Text="Usuario"></MenuFlyoutItem>
+            <MenuFlyoutSubItem Text="Archivo2">
+                <MenuFlyoutItem Text="Archivo 2.3"></MenuFlyoutItem>
+            </MenuFlyoutSubItem>
+        </MenuBarItem>
+        <!--mi info en footer en shell ?-->
+        
+    </ContentPage.MenuBarItems>
+    <ScrollView>
+        
+    </ScrollView>
+
+</pl:Plantilla1>

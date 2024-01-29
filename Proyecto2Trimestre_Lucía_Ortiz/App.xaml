@@ -1,0 +1,61 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Proyecto2Trimestre_Lucía_Ortiz" 
+             x:Class="Proyecto2Trimestre_Lucía_Ortiz.App">
+    <Application.Resources>
+       
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <ControlTemplate x:Key="Plantilla1">
+               
+                <Grid BackgroundColor="RosyBrown" Padding="0" Margin="0" RowDefinitions="auto,*,auto" FlowDirection="LeftToRight" >
+
+                    <Image Margin="20" Source="logo.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"  WidthRequest="40" HeightRequest="40"></Image>
+
+                    <Label WidthRequest="200" TextColor="White"  Padding="50,0,0,0"  Text="Librería" VerticalOptions="Center" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"></Label>
+                    <Label WidthRequest="200" TextColor="White"  Padding="100,0,0,0"  Text="{x:Static local:App.Username}" VerticalOptions="Center" HorizontalOptions="End" ></Label>
+                    <Image Source="user_icon_default.png" WidthRequest="60" VerticalOptions="Center" HorizontalOptions="End"></Image>
+
+                    <ContentPresenter Grid.Row="1" BackgroundColor="White">
+
+                    </ContentPresenter>
+                    <!-- <Grid Padding="20" ColumnDefinitions="*,*,*" RowDefinitions="auto,auto,auto" Grid.Row="2" HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+    <Label x:Name="name" TextColor="White" Text="Contacto" Grid.Row="0" Grid.Column="0">
+        <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Label.GestureRecognizers>
+    </Label>
+    <Label TextColor="White" Text="LinkedIn" Grid.Row="0" Grid.Column="1">
+        <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Label.GestureRecognizers>
+    </Label>
+    <Label TextColor="White" Text="GitHub"  Grid.Row="0" Grid.Column="2">
+        <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Label.GestureRecognizers>
+    </Label>
+</Grid>-->
+                    <Grid Padding="20" ColumnDefinitions="*,*,*" RowDefinitions="auto,auto,auto" Grid.Row="2" HorizontalOptions="Center" ColumnSpacing="40" >
+                        <Image Source="linkedin_icon.png" WidthRequest="50" HeightRequest="50" Grid.Row="0" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Image  Source="github_icon.png" WidthRequest="50" HeightRequest="50" Grid.Row="0" Grid.Column="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                </Grid>
+                
+                
+            </ControlTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
